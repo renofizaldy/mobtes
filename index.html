@@ -15,8 +15,12 @@
 	<link rel="stylesheet" href="assets/css/framework7.material.colors.min.css">
 	<!-- Path to your custom app styles-->
 	<link rel="stylesheet" href="assets/css/my-app.css">
-
+	
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	
 	<style type="text/css">
+		body {
+		}
 		body.with-panel-left-cover .statusbar-overlay{
 			background-color: #333;
 		}
@@ -33,7 +37,11 @@
 		.page-content {
 			padding-top:70px !important;
 		}
+		.list-block .item-title {
+			font-weight: bold;
+		}
 		.front-title {
+			font-family: 'Bree Serif', serif;
 			margin:0;
 			text-align:center;
 			font-weight: bold;
@@ -53,10 +61,19 @@
 		}
 		.footer {
 			text-align: center;
+    		vertical-align: middle;
+    		min-height: 50px;
+		}
+		.separator {
+			background-color: rgba(0,0,0,.12);
+			display: block;
+			height: 1px;
+			width: 100%;
+			margin: 15px 0 5px;
 		}
 	</style>
 </head>
-<body class="theme-deeporange">
+<body class="theme-black">
 	<div class="statusbar-overlay"></div>
 	<div class="panel-overlay"></div>
 	<div class="panel panel-left panel-cover">
@@ -65,7 +82,7 @@
 				<div data-page="panel-left" class="page">
 					<div class="navbar">
 						<div class="navbar-inner">
-							<div class="center">MENU</div>
+							<div class="center page-title">MENU</div>
 						</div>
 					</div>
 					<div class="page-content">
@@ -76,7 +93,7 @@
 								<div class="item-content">
 									<div class="item-media"><i class="icon icon-f7"></i></div>
 									<div class="item-inner">
-										<div class="item-title">Home</div>
+										<div class="item-title">Beranda</div>
 									</div>
 								</div></a></li>
 
@@ -126,57 +143,71 @@
 					<div class="navbar">
 						<div class="navbar-inner">
 							<div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
-							<div class="left page-title">HOME</div>
+							<div class="left page-title">BERANDA</div>
 						</div>
 					</div>
 
 					<!-- Scrollable page content -->
 					<div class="page-content">
 						<h3 class="front-title">Oleh-Oleh Terbaik</h3>
-						<div class="content-block">
-							<div class="row list-food">
-								<div class="col-25"><img src="assets/photos/1749_1.jpg" style="width:100%"></div>
-								<div class="col-75">
-									<h4 class="list-title">Cookies Apel</h4>
-									<small>By Sansan Cookies</small>
-								</div>
-							</div>
-						</div>
-						<div class="content-block">
-							<div class="row list-food">
-								<div class="col-25"><img src="assets/photos/1540_3.jpg" style="width:100%"></div>
-								<div class="col-75">
-									<h4 class="list-title">Mantau Mini</h4>
-									<small>By Fya Cakes</small>
-								</div>
-							</div>
-						</div>
-						<div class="content-block">
-							<div class="row list-food">
-								<div class="col-25"><img src="assets/photos/793_3.jpg" style="width:100%"></div>
-								<div class="col-75">
-									<h4 class="list-title">Chigiri Pan</h4>
-									<small>By Marqies Bakery</small>
-								</div>
-							</div>
-						</div>
-						<div class="content-block">
-							<div class="row list-food">
-								<div class="col-25"><img src="assets/photos/86_1.jpg" style="width:100%"></div>
-								<div class="col-75">
-									<h4 class="list-title">Donat Poteto</h4>
-									<small>By InnaRoti</small>
-								</div>
-							</div>
-						</div>
-						<div class="content-block">
-							<div class="row list-food">
-								<div class="col-25"><img src="assets/photos/722_1.jpg" style="width:100%"></div>
-								<div class="col-75">
-									<h4 class="list-title">Brownies Choco Almond</h4>
-									<small>By Sinbi Brownies</small>
-								</div>
-							</div>
+						<div class="list-block media-list">
+							<ul>
+								<li>
+									<div class="item-content">
+										<div class="item-media"><img src="assets/photos/1749_1.jpg" width="44"></div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div class="item-title">Cookies Apel</div>
+											</div>
+											<div class="item-subtitle">By Sansan Cookies</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<div class="item-media"><img src="assets/photos/1540_3.jpg" width="44"></div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div class="item-title">Mantau Mini</div>
+											</div>
+											<div class="item-subtitle">By Fya Cakes</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<div class="item-media"><img src="assets/photos/793_3.jpg" width="44"></div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div class="item-title">Chigiri Pan</div>
+											</div>
+											<div class="item-subtitle">By Marqies Bakery</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<div class="item-media"><img src="assets/photos/86_1.jpg" width="44"></div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div class="item-title">Donat Poteto</div>
+											</div>
+											<div class="item-subtitle">By InnaRoti</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<div class="item-media"><img src="assets/photos/722_1.jpg" width="44"></div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div class="item-title">Brownies Choco Almond</div>
+											</div>
+											<div class="item-subtitle">By Sinbi Brownies</div>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 						<br>
 						<h3 class="front-title">Cari dan Temukan</h3>
@@ -207,10 +238,14 @@
 									</div>
 								</div>
 							</div></li>
+							<li><div class="item-content">
+								<div class="item-inner not-empty-state">
+									<p class="buttons-row">
+										<a href="#" class="center button button-big button-fill button-raised">Mencari</a>
+									</p>
+								</div>
+							</div></li>
 						</ul></div>
-						<p class="buttons-row">
-							<a href="#" class="center button button-fill button-raised" style="width:90%;margin:0 auto">Mencari</a>
-						</p>
 						<!-- Separator -->
 
 						<br>
