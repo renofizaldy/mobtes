@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Color theme for statusbar -->
+	<meta name="theme-color" content="#2196f3">
+	<!-- Your app title -->
+	<title>Oleh-Oleh Khas Malang</title>
+	<!-- Path to Framework7 Library CSS, Material Theme -->
+	<link rel="stylesheet" href="assets/css/framework7.material.min.css">
+	<!-- Path to Framework7 color related styles, Material Theme -->
+	<link rel="stylesheet" href="assets/css/framework7.material.colors.min.css">
+	<!-- Path to your custom app styles-->
+	<link rel="stylesheet" href="assets/css/my-app.css">
+
+	<style type="text/css">
+		body.with-panel-left-cover .statusbar-overlay{
+			background-color: #333;
+		}
+		.content-block-title {
+			margin-top: 0;
+		}
+		.content-block, .list-block {
+			margin:15px 0;
+		}
+		.page-title {
+			font-size: 18px;
+			/*font-weight: bold;*/
+		}
+		.page-content {
+			padding-top:70px !important;
+		}
+		.front-title {
+			margin:0;
+			text-align:center;
+			font-weight: bold;
+			font-size: 19px;
+			color: #555;
+		}
+		.list-food small {
+			color: #666;
+		}
+		.list-title {
+			margin: 0;
+			font-size: 16px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 200px;
+		}
+		.footer {
+			text-align: center;
+		}
+	</style>
+</head>
+<body class="theme-deeporange">
+	<div class="statusbar-overlay"></div>
+	<div class="panel-overlay"></div>
+	<div class="panel panel-left panel-cover">
+		<div class="view navbar-fixed" data-page="panel-left">
+			<div class="pages">
+				<div data-page="panel-left" class="page">
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="center">MENU</div>
+						</div>
+					</div>
+					<div class="page-content">
+						<div class="content-block-title">Halaman</div>
+						<div class="list-block">
+							<ul>
+								<li><a href="forms.html" class="item-link close-panel">
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-f7"></i></div>
+									<div class="item-inner">
+										<div class="item-title">Home</div>
+									</div>
+								</div></a></li>
+
+								<li><a href="forms.html" class="item-link close-panel">
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-f7"></i></div>
+									<div class="item-inner">
+										<div class="item-title">Pencarian</div>
+									</div>
+								</div></a></li>
+
+								<li><a href="list-view.html" class="item-link close-panel">
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-f7"></i></div>
+									<div class="item-inner">
+										<div class="item-title">Tempat Oleh-Oleh</div>
+									</div>
+								</div></a></li>
+
+								<li><a href="media-lists.html" class="item-link close-panel">
+								<div class="item-content">
+								<div class="item-media"><i class="icon icon-f7"></i></div>
+								<div class="item-inner">
+								<div class="item-title">Tentang Saya</div>
+								</div>
+								</div></a></li>
+							</ul>
+						</div>
+						<div class="content-block-title">
+							<small>Copyright &copy; 2016. Riska 2012</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Views -->
+	<div class="views">
+		<!-- Your main view, should have "view-main" class -->
+		<div class="view view-main">
+			<!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+			<div class="pages navbar-fixed toolbar-fixed">
+				<!-- Page, "data-page" contains page name -->
+				<div data-page="index" class="page">
+
+					<!-- Top Navbar. In Material theme it should be inside of the page-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+							<div class="left page-title">HOME</div>
+						</div>
+					</div>
+
+					<!-- Scrollable page content -->
+					<div class="page-content">
+						<h3 class="front-title">Oleh-Oleh Terbaik</h3>
+						<div class="content-block">
+							<div class="row list-food">
+								<div class="col-25"><img src="assets/photos/1749_1.jpg" style="width:100%"></div>
+								<div class="col-75">
+									<h4 class="list-title">Cookies Apel</h4>
+									<small>By Sansan Cookies</small>
+								</div>
+							</div>
+						</div>
+						<div class="content-block">
+							<div class="row list-food">
+								<div class="col-25"><img src="assets/photos/1540_3.jpg" style="width:100%"></div>
+								<div class="col-75">
+									<h4 class="list-title">Mantau Mini</h4>
+									<small>By Fya Cakes</small>
+								</div>
+							</div>
+						</div>
+						<div class="content-block">
+							<div class="row list-food">
+								<div class="col-25"><img src="assets/photos/793_3.jpg" style="width:100%"></div>
+								<div class="col-75">
+									<h4 class="list-title">Chigiri Pan</h4>
+									<small>By Marqies Bakery</small>
+								</div>
+							</div>
+						</div>
+						<div class="content-block">
+							<div class="row list-food">
+								<div class="col-25"><img src="assets/photos/86_1.jpg" style="width:100%"></div>
+								<div class="col-75">
+									<h4 class="list-title">Donat Poteto</h4>
+									<small>By InnaRoti</small>
+								</div>
+							</div>
+						</div>
+						<div class="content-block">
+							<div class="row list-food">
+								<div class="col-25"><img src="assets/photos/722_1.jpg" style="width:100%"></div>
+								<div class="col-75">
+									<h4 class="list-title">Brownies Choco Almond</h4>
+									<small>By Sinbi Brownies</small>
+								</div>
+							</div>
+						</div>
+						<br>
+						<h3 class="front-title">Cari dan Temukan</h3>
+						<div class="list-block inputs-list"><ul>
+							<li><div class="item-content">
+								<div class="item-inner not-empty-state">
+									<div class="item-title label">Harga</div>
+									<div class="item-input item-input-field not-empty-state">
+									<select class="not-empty-state">
+										<option>Rp 5,000 - Rp 10,000</option>
+										<option>Rp 10,000 - Rp 20,000</option>
+										<option>Rp 20,000 - Rp 35,000</option>
+										<option>Rp 35,000 - Rp 100,000</option>
+									</select>
+									</div>
+								</div>
+							</div></li>
+							<li><div class="item-content">
+								<div class="item-inner not-empty-state">
+									<div class="item-title label">Lokasi</div>
+									<div class="item-input item-input-field not-empty-state">
+									<select class="not-empty-state">
+										<option>Kel. Lowokwaru</option>
+										<option>Kel. Samaan</option>
+										<option>Kel. Dinoyo</option>
+										<option>Kel. Sumbersari</option>
+									</select>
+									</div>
+								</div>
+							</div></li>
+						</ul></div>
+						<p class="buttons-row">
+							<a href="#" class="center button button-fill button-raised" style="width:90%;margin:0 auto">Mencari</a>
+						</p>
+						<!-- Separator -->
+
+						<br>
+						<div class="footer">
+							<small>Copyright &copy; 2016. By <a href="about.html">Riska</a></small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Path to Framework7 Library JS-->
+	<script type="text/javascript" src="assets/js/framework7.min.js"></script>
+	<!-- Path to your app js-->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html> 
