@@ -15,9 +15,9 @@
 	<link rel="stylesheet" href="assets/css/framework7.material.colors.min.css">
 	<!-- Path to your custom app styles-->
 	<link rel="stylesheet" href="assets/css/my-app.css">
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-	
+
 	<style type="text/css">
 		body {
 		}
@@ -71,6 +71,9 @@
 			width: 100%;
 			margin: 15px 0 5px;
 		}
+		.list-block .item-subtitle {
+			font-size: 13px;
+		}
 	</style>
 </head>
 <body class="theme-black">
@@ -87,41 +90,47 @@
 					</div>
 					<div class="page-content">
 						<div class="content-block-title">Halaman</div>
-						<div class="list-block">
-							<ul>
-								<li><a href="forms.html" class="item-link close-panel">
-								<div class="item-content">
-									<div class="item-media"><i class="icon icon-f7"></i></div>
-									<div class="item-inner">
-										<div class="item-title">Beranda</div>
-									</div>
-								</div></a></li>
-
-								<li><a href="forms.html" class="item-link close-panel">
-								<div class="item-content">
-									<div class="item-media"><i class="icon icon-f7"></i></div>
-									<div class="item-inner">
-										<div class="item-title">Pencarian</div>
-									</div>
-								</div></a></li>
-
-								<li><a href="list-view.html" class="item-link close-panel">
-								<div class="item-content">
-									<div class="item-media"><i class="icon icon-f7"></i></div>
-									<div class="item-inner">
-										<div class="item-title">Tempat Oleh-Oleh</div>
-									</div>
-								</div></a></li>
-
-								<li><a href="media-lists.html" class="item-link close-panel">
-								<div class="item-content">
+						<div class="list-block"><ul>
+							<li><a href="#" class="item-link close-panel">
+							<div class="item-content">
 								<div class="item-media"><i class="icon icon-f7"></i></div>
 								<div class="item-inner">
-								<div class="item-title">Tentang Saya</div>
+									<div class="item-title">Beranda</div>
 								</div>
-								</div></a></li>
-							</ul>
-						</div>
+							</div></a></li>
+
+							<li><a href="pencarian.html" class="item-link close-panel">
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-f7"></i></div>
+								<div class="item-inner">
+									<div class="item-title">Pencarian</div>
+								</div>
+							</div></a></li>
+
+							<li><a href="makanan.html" class="item-link close-panel">
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-f7"></i></div>
+								<div class="item-inner">
+									<div class="item-title">Oleh-Oleh</div>
+								</div>
+							</div></a></li>
+
+							<li><a href="bantuan.html" class="item-link close-panel">
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-f7"></i></div>
+								<div class="item-inner">
+									<div class="item-title">Bantuan</div>
+								</div>
+							</div></a></li>
+
+							<li><a href="tentang.html" class="item-link close-panel">
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-f7"></i></div>
+								<div class="item-inner">
+									<div class="item-title">Tentang</div>
+								</div>
+							</div></a></li>
+						</ul></div>
 						<div class="content-block-title">
 							<small>Copyright &copy; 2016. Riska 2012</small>
 						</div>
@@ -130,16 +139,13 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- Views -->
 	<div class="views">
-		<!-- Your main view, should have "view-main" class -->
 		<div class="view view-main">
-			<!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
 			<div class="pages navbar-fixed toolbar-fixed">
-				<!-- Page, "data-page" contains page name -->
 				<div data-page="index" class="page">
 
-					<!-- Top Navbar. In Material theme it should be inside of the page-->
 					<div class="navbar">
 						<div class="navbar-inner">
 							<div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
@@ -149,7 +155,7 @@
 
 					<!-- Scrollable page content -->
 					<div class="page-content">
-						<h3 class="front-title">Oleh-Oleh Terbaik</h3>
+						<h3 class="front-title">Oleh-Oleh Favorit</h3>
 						<div class="list-block media-list">
 							<ul>
 								<li>
@@ -210,49 +216,11 @@
 							</ul>
 						</div>
 						<br>
-						<h3 class="front-title">Cari dan Temukan</h3>
-						<div class="list-block inputs-list"><ul>
-							<li><div class="item-content">
-								<div class="item-inner not-empty-state">
-									<div class="item-title label">Harga</div>
-									<div class="item-input item-input-field not-empty-state">
-									<select class="not-empty-state">
-										<option>Rp 5,000 - Rp 10,000</option>
-										<option>Rp 10,000 - Rp 20,000</option>
-										<option>Rp 20,000 - Rp 35,000</option>
-										<option>Rp 35,000 - Rp 100,000</option>
-									</select>
-									</div>
-								</div>
-							</div></li>
-							<li><div class="item-content">
-								<div class="item-inner not-empty-state">
-									<div class="item-title label">Lokasi</div>
-									<div class="item-input item-input-field not-empty-state">
-									<select class="not-empty-state">
-										<option>Kel. Lowokwaru</option>
-										<option>Kel. Samaan</option>
-										<option>Kel. Dinoyo</option>
-										<option>Kel. Sumbersari</option>
-									</select>
-									</div>
-								</div>
-							</div></li>
-							<li><div class="item-content">
-								<div class="item-inner not-empty-state">
-									<p class="buttons-row">
-										<a href="#" class="center button button-big button-fill button-raised">Mencari</a>
-									</p>
-								</div>
-							</div></li>
-						</ul></div>
-						<!-- Separator -->
-
-						<br>
 						<div class="footer">
-							<small>Copyright &copy; 2016. By <a href="about.html">Riska</a></small>
+							<small>Copyright &copy; 2016. By Riska</small>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
